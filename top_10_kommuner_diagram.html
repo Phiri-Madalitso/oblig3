@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-4f315d91df72ddc825fd7fbed2290d90"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "kom", "type": "nominal"}, "tooltip": [{"field": "kom", "type": "nominal"}, {"field": "\u00c5r", "type": "quantitative"}, {"field": "Prosent", "type": "quantitative"}], "x": {"field": "\u00c5r", "title": "\u00c5r", "type": "ordinal"}, "y": {"field": "Prosent", "title": "Prosentandel barn i barnehage", "type": "quantitative"}}, "height": 600, "title": "Gjennomsnittlig prosentandel barn i ett- og to-\u00e5rsalderen i barnehage (2015-2023)", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-4f315d91df72ddc825fd7fbed2290d90": [{"kom": "Sortland", "\u00c5r": 15, "Prosent": 88.8}, {"kom": "Ulstein", "\u00c5r": 15, "Prosent": 87.7}, {"kom": "B\u00f8", "\u00c5r": 15, "Prosent": 85.2}, {"kom": "Vevelstad", "\u00c5r": 15, "Prosent": 80.0}, {"kom": "Vefsn", "\u00c5r": 15, "Prosent": 84.8}, {"kom": "Her\u00f8y", "\u00c5r": 15, "Prosent": 85.3}, {"kom": "Sola", "\u00c5r": 15, "Prosent": 87.4}, {"kom": "Rana", "\u00c5r": 15, "Prosent": 86.8}, {"kom": "Tingvoll", "\u00c5r": 15, "Prosent": 91.5}, {"kom": "Bod\u00f8", "\u00c5r": 15, "Prosent": 88.7}, {"kom": "Sortland", "\u00c5r": 16, "Prosent": 90.6}, {"kom": "Ulstein", "\u00c5r": 16, "Prosent": 90.5}, {"kom": "B\u00f8", "\u00c5r": 16, "Prosent": 95.0}, {"kom": "Vevelstad", "\u00c5r": 16, "Prosent": 92.3}, {"kom": "Vefsn", "\u00c5r": 16, "Prosent": 88.3}, {"kom": "Her\u00f8y", "\u00c5r": 16, "Prosent": 87.8}, {"kom": "Sola", "\u00c5r": 16, "Prosent": 88.6}, {"kom": "Rana", "\u00c5r": 16, "Prosent": 87.8}, {"kom": "Tingvoll", "\u00c5r": 16, "Prosent": 87.5}, {"kom": "Bod\u00f8", "\u00c5r": 16, "Prosent": 86.9}, {"kom": "Sortland", "\u00c5r": 17, "Prosent": 95.9}, {"kom": "Ulstein", "\u00c5r": 17, "Prosent": 93.9}, {"kom": "B\u00f8", "\u00c5r": 17, "Prosent": 97.9}, {"kom": "Vevelstad", "\u00c5r": 17, "Prosent": 100.0}, {"kom": "Vefsn", "\u00c5r": 17, "Prosent": 91.5}, {"kom": "Her\u00f8y", "\u00c5r": 17, "Prosent": 84.0}, {"kom": "Sola", "\u00c5r": 17, "Prosent": 90.7}, {"kom": "Rana", "\u00c5r": 17, "Prosent": 87.9}, {"kom": "Tingvoll", "\u00c5r": 17, "Prosent": 90.0}, {"kom": "Bod\u00f8", "\u00c5r": 17, "Prosent": 89.1}, {"kom": "Sortland", "\u00c5r": 18, "Prosent": 90.4}, {"kom": "Ulstein", "\u00c5r": 18, "Prosent": 89.9}, {"kom": "B\u00f8", "\u00c5r": 18, "Prosent": 97.4}, {"kom": "Vevelstad", "\u00c5r": 18, "Prosent": 90.0}, {"kom": "Vefsn", "\u00c5r": 18, "Prosent": 92.4}, {"kom": "Her\u00f8y", "\u00c5r": 18, "Prosent": 86.3}, {"kom": "Sola", "\u00c5r": 18, "Prosent": 89.0}, {"kom": "Rana", "\u00c5r": 18, "Prosent": 88.8}, {"kom": "Tingvoll", "\u00c5r": 18, "Prosent": 92.5}, {"kom": "Bod\u00f8", "\u00c5r": 18, "Prosent": 88.9}, {"kom": "Sortland", "\u00c5r": 19, "Prosent": 91.6}, {"kom": "Ulstein", "\u00c5r": 19, "Prosent": 96.7}, {"kom": "B\u00f8", "\u00c5r": 19, "Prosent": 93.2}, {"kom": "Vevelstad", "\u00c5r": 19, "Prosent": 100.0}, {"kom": "Vefsn", "\u00c5r": 19, "Prosent": 89.9}, {"kom": "Her\u00f8y", "\u00c5r": 19, "Prosent": 89.5}, {"kom": "Sola", "\u00c5r": 19, "Prosent": 90.9}, {"kom": "Rana", "\u00c5r": 19, "Prosent": 91.1}, {"kom": "Tingvoll", "\u00c5r": 19, "Prosent": 90.0}, {"kom": "Bod\u00f8", "\u00c5r": 19, "Prosent": 89.4}, {"kom": "Sortland", "\u00c5r": 20, "Prosent": 91.7}, {"kom": "Ulstein", "\u00c5r": 20, "Prosent": 92.6}, {"kom": "B\u00f8", "\u00c5r": 20, "Prosent": 86.0}, {"kom": "Vevelstad", "\u00c5r": 20, "Prosent": 100.0}, {"kom": "Vefsn", "\u00c5r": 20, "Prosent": 91.4}, {"kom": "Her\u00f8y", "\u00c5r": 20, "Prosent": 93.5}, {"kom": "Sola", "\u00c5r": 20, "Prosent": 91.2}, {"kom": "Rana", "\u00c5r": 20, "Prosent": 91.4}, {"kom": "Tingvoll", "\u00c5r": 20, "Prosent": 88.9}, {"kom": "Bod\u00f8", "\u00c5r": 20, "Prosent": 92.0}, {"kom": "Sortland", "\u00c5r": 21, "Prosent": 94.9}, {"kom": "Ulstein", "\u00c5r": 21, "Prosent": 94.3}, {"kom": "B\u00f8", "\u00c5r": 21, "Prosent": 92.1}, {"kom": "Vevelstad", "\u00c5r": 21, "Prosent": 77.8}, {"kom": "Vefsn", "\u00c5r": 21, "Prosent": 93.1}, {"kom": "Her\u00f8y", "\u00c5r": 21, "Prosent": 96.4}, {"kom": "Sola", "\u00c5r": 21, "Prosent": 93.1}, {"kom": "Rana", "\u00c5r": 21, "Prosent": 93.2}, {"kom": "Tingvoll", "\u00c5r": 21, "Prosent": 95.1}, {"kom": "Bod\u00f8", "\u00c5r": 21, "Prosent": 92.4}, {"kom": "Sortland", "\u00c5r": 22, "Prosent": 97.5}, {"kom": "Ulstein", "\u00c5r": 22, "Prosent": 92.5}, {"kom": "B\u00f8", "\u00c5r": 22, "Prosent": 86.8}, {"kom": "Vevelstad", "\u00c5r": 22, "Prosent": 90.0}, {"kom": "Vefsn", "\u00c5r": 22, "Prosent": 95.0}, {"kom": "Her\u00f8y", "\u00c5r": 22, "Prosent": 94.3}, {"kom": "Sola", "\u00c5r": 22, "Prosent": 90.5}, {"kom": "Rana", "\u00c5r": 22, "Prosent": 93.7}, {"kom": "Tingvoll", "\u00c5r": 22, "Prosent": 80.0}, {"kom": "Bod\u00f8", "\u00c5r": 22, "Prosent": 92.3}, {"kom": "Sortland", "\u00c5r": 23, "Prosent": 100.0}, {"kom": "Ulstein", "\u00c5r": 23, "Prosent": 93.3}, {"kom": "B\u00f8", "\u00c5r": 23, "Prosent": 97.1}, {"kom": "Vevelstad", "\u00c5r": 23, "Prosent": 90.0}, {"kom": "Vefsn", "\u00c5r": 23, "Prosent": 92.2}, {"kom": "Her\u00f8y", "\u00c5r": 23, "Prosent": 99.4}, {"kom": "Sola", "\u00c5r": 23, "Prosent": 93.2}, {"kom": "Rana", "\u00c5r": 23, "Prosent": 93.3}, {"kom": "Tingvoll", "\u00c5r": 23, "Prosent": 98.2}, {"kom": "Bod\u00f8", "\u00c5r": 23, "Prosent": 91.8}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
